@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Santiago Rojas</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar">
+    <a class="navbar-brand" href="#"><h4>Santiago Rojas</h4></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link p-2" href="https://www.github.com/srojas19" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa fa-github fa-lg"></i> 
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-2" href="https://www.twitter.com/s_rojas19" target="_blank" rel="noopener" aria-label="Twitter">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-2" href="mailto:s.rojas19@uniandes.edu.co" rel="noopener" aria-label="Slack">
+            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>              
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container-fluid container-dark" id="about">
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2 text-center">
+        <img src="/pics/profile-pic.jpg" alt="profile picture" class="img-fluid mb-3 mb-md-0" id="profile-pic">
+      </div>  
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <h1 class="mb-3">Hi! I'm Santiago Rojas</h1>
+        <p class="lead">
+          and I'm currently studying Systems Engineering in 
+          <a href="https://uniandes.edu.co" target="_blank" rel="noopener">Universidad de los Andes</a>
+          in Bogotá, Colombia.
+        </p>
+        <p class="lead mb-4">
+          I'm interested in learning and adquiring new skills, such as Web development, App development, and Machine learning.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="education">
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-1 text-center">
+        <img src="/pics/universidad-de-los-andes.png" alt="andes university" class="img-fluid mb-3 mb-md-0">
+      </div>  
+      <div class="col-md-6 order-md-2 text-center text-md-left pr-md-5">
+        <h1>Education</h1>
+        <p><strong>Universidad de los Andes </strong> (2015 – Present)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="skills">
+    <div class="row align-items-center">
+      <div class="col mb-3">      
+        <h1 class="text-center">Skills</h1>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top mx-auto d-block my-2" src="pics/language.png" alt="Languages">
+        <div class="card-body">
+          <h4 class="card-title">Language</h4>
+          <ul class="list-unstyled">
+            <li>Spanish (Native)</li>
+            <li>English</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top mx-auto d-block my-2" src="pics/code.png" alt="Technical">
+        <div class="card-body">
+          <h4 class="card-title">Technical</h4>
+          <ul class="list-unstyled xm-2">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>              
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top mx-auto d-block my-2" src="pics/hobby.png" alt="Other">
+        <div class="card-body">
+          <h4 class="card-title">Other</h4>
+          <ul class="list-unstyled">
+            <li>Photography</li>             
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="interests">
+    <h1 >Interests</h1>
+    <h3 class="mb-4">New technologies to learn:</h3>
+    <div class="row m">
+      <div class="col text-center">
+        <figure class="figure">
+          <img src="pics/interests/react.png" class="figure-img img-fluid" style="max-height:140px" alt="React framework">
+          <figcaption class="figure-caption">React Framework</figcaption>
+        </figure>
+      </div>
+      <div class="col text-center">
+        <figure class="figure">
+          <img src="pics/interests/web-assembly.png" class="figure-img img-fluid" style="max-height:140px" alt="Web Assembly">
+          <figcaption class="figure-caption">Web Assembly</figcaption>
+        </figure>
+      </div>
+      <div class="col text-center">
+        <figure class="figure">
+          <img src="pics/interests/django.png" class="figure-img img-fluid" style="max-height:140px" alt="Django framework">
+          <figcaption class="figure-caption">Django</figcaption>
+        </figure>
+      </div>
+    </div>
     
+  </div>
+
+  <div class="container " id="projects">
+    <h1 >Projects</h1>
+    <h4>Although I have not worked on a professional setting, Universidad de los Andes has allowed 
+      me to play part in course projects of distinct assignatures, such as: </h4>
+    <ul>
+      <li><strong>Software Development in Teams</strong></li>
+      <li><strong>Transactional Systems</strong></li>
+      <li><strong>Product Design and Innovation with IT</strong></li>
+      <li><strong>Software Architecture</strong></li>
+    </ul>
+  </div>
+
+  <div class="container footer">
+    <!-- empty -->
+  </div>
+
+  <!-- bootstrap  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/ab925f25b5.js"></script>
+  
 </body>
 </html>

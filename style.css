@@ -1,0 +1,56 @@
+body {
+    position: relative;
+    overflow-y: scroll;
+    background: #f2f2f2;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    color: rgba(0,0,0,.9);
+    text-decoration: underline;
+  }
+
+.container-dark {
+    background: #222;
+    width: 100%;
+    color:#ccc;
+}
+
+.navbar-brand > h4 {
+    margin-top: 8px;
+}
+
+.container-fluid {
+    padding: 80px 20px
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.about {
+    background-image: url('pics/bogota.jpg');
+}
+
+.footer {
+    padding: 80px 20px
+}
+
+#profile-pic {
+    border-radius: 100%;
+    width: 50%!important;
+    align-self: center;
+}
+
+img {
+    max-width: 50%!important;
+    width: 40%
+}
+
+p > a {
+    color: inherit;
+    text-decoration: underline;
+}
+
